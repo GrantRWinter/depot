@@ -11,6 +11,10 @@
     <%= image_tag("logo.png") %>
     <%= @page_title || "Pragmatic Bookshelf" %>
   </div>
+  <% if @counter %>
+  <h1><%= pluralize @counter, 'time' %></h1>
+  <% end %>
+
   <div id="columns">
     <div id="side">
       <ul>
